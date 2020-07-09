@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購入画面</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="articles-area noselect">
+        <ul>
+            <li class="article-area">
+                <div class="article-thumbnail-image">
+                    <img src="" alt="">
+                </div>
+                <div class="article-headline-content">
+                    <p>何かしらの商品の説明</p>
+                    <i class="fas fa-minus-circle fa-3x fa-fw minus" onclick="count_minus(0)"></i>
+                    <span id="number-1">0</span>
+                    <i class="fas fa-plus-circle fa-3x fa-fw plus" onclick="count_plus(0)"></i>
+                </div>
+            </li>
+            <li class="article-area">
+                <div class="article-thumbnail-image">
+                    <img src="" alt="">
+                </div>
+                <div class="article-headline-content">
+                    <p>何かしらの商品の説明</p>
+                    <i class="fas fa-minus-circle fa-3x fa-fw minus" onclick="count_minus(1)"></i>
+                    <span id="number-2">0</span>
+                    <i class="fas fa-plus-circle fa-3x fa-fw plus" onclick="count_plus(1)"></i>
+                </div>
+            </li>
+            <li class="article-area">
+                <div class="article-thumbnail-image">
+                    <img src="" alt="">
+                </div>
+                <div class="article-headline-content">
+                    <p>何かしらの商品の説明</p>
+                    <i class="fas fa-minus-circle fa-3x fa-fw minus" onclick="count_minus(2)"></i>
+                    <span id="number-3">0</span>
+                    <i class="fas fa-plus-circle fa-3x fa-fw plus" onclick="count_plus(2)"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="articles-area noselect">
+        <ul>
+            <li class="article-area">
+                <div class="article-thumbnail-image">
+                    <img src="" alt="">
+                </div>
+                <div class="article-headline-content">
+                    <p>何かしらの商品の説明</p>
+                    <i class="fas fa-minus-circle fa-3x fa-fw minus" onclick="count_minus(3)"></i>
+                    <span id="number-4">0</span>
+                    <i class="fas fa-plus-circle fa-3x fa-fw plus" onclick="count_plus(3)"></i>
+                </div>
+            </li>
+            <li class="article-area">
+                <div class="article-thumbnail-image">
+                    <img src="" alt="">
+                </div>
+                <div class="article-headline-content">
+                    <p>何かしらの商品の説明</p>
+                    <i class="fas fa-minus-circle fa-3x fa-fw minus" onclick="count_minus(4)"></i>
+                    <span id="number-5">0</span>
+                    <i class="fas fa-plus-circle fa-3x fa-fw plus" onclick="count_plus(4)"></i>
+                    </script>
+                </div>
+            </li>
+            <li class="article-area">
+                <div class="article-thumbnail-image">
+                    <img src="" alt="">
+                </div>
+                <div class="article-headline-content">
+                    <p>何かしらの商品の説明</p>
+                    <i class="fas fa-minus-circle fa-3x fa-fw minus" onclick="count_minus(5)"></i>
+                    <span id="number-6">0</span>
+                    <i class="fas fa-plus-circle fa-3x fa-fw plus" onclick="count_plus(5)"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="gokei noselect">
+        <h1>合計：<span id="count">0</span>円</h1>
+        <div class="reset">
+            <p class="btn-gradient-radius" id="reset">RESET</p>
+        </div>
+        <div id="button">
+            <p class="btn-gradient-radius">購入を完了する</p>
+            <div id="img-qr"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+
+</html>

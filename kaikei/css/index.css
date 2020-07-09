@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.minus {
+    color: #FC354C;
+    cursor: pointer;
+}
+
+.plus {
+    color: aquamarine;
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: disc;
+}
+
+li {
+    list-style: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.background {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: #ee9ca7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: -1;
+}
+
+.background h1 {
+    text-align: center;
+    color: #FF8C00;
+}
+
+.article-area {
+    width: 380px;
+    height: 280px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.article-thumbnail-image {
+    position: relative;
+}
+
+.article-thumbnail-image img {
+    padding-top: 10px;
+    width: 300px;
+    height: 180px;
+}
+
+.article-headline-content {
+    width: 80%;
+    display: inline-block;
+    font-size: 13px;
+    color: #b3aeb5;
+    text-align: center;
+}
+
+.article-headline-content span {
+    font-size: 50px;
+    color: black;
+}
+
+.gokei h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#button {
+    text-align: center;
+}
+
+.reset {
+    text-align: center;
+}
+
+.btn-gradient-radius {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
