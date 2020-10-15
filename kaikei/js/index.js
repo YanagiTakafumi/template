@@ -4,9 +4,9 @@
 // countは値段
 
 
-var a = [0, 0, 0, 0, 0, 0, 0];
-var number = ["number-1", "number-2", "number-3", "number-4", "number-5", "number-6"]
-var count = [120, 150, 340, 640, 720, 320];
+let a = [0, 0, 0, 0, 0, 0, 0];
+let number = ["number-1", "number-2", "number-3", "number-4", "number-5", "number-6"]
+let count = [120, 150, 340, 640, 720, 320];
 
 function count_plus(i) {
     if (a[6] < 5) {
