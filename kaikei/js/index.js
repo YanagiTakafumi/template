@@ -26,30 +26,30 @@ function count_minus(i) {
 
 $(function() {
     $('.fa-minus-circle').click(function() {
-        var gokei = a[0] * count[0] + a[1] * count[1] + a[2] * count[2] + a[3] * count[3] + a[4] * count[4] + a[5] * count[5];
+        let gokei = a[0] * count[0] + a[1] * count[1] + a[2] * count[2] + a[3] * count[3] + a[4] * count[4] + a[5] * count[5];
         document.getElementById("count").innerHTML = gokei;
     });
 
     $('.fa-plus-circle').click(function() {
-        var gokei = a[0] * count[0] + a[1] * count[1] + a[2] * count[2] + a[3] * count[3] + a[4] * count[4] + a[5] * count[5];
+        let gokei = a[0] * count[0] + a[1] * count[1] + a[2] * count[2] + a[3] * count[3] + a[4] * count[4] + a[5] * count[5];
         document.getElementById("count").innerHTML = gokei;
     });
 
     $('#button').click(function() {
         // 初めは空文字
-        var qrtext = "";
-        for (var i = 0; i <= 5; i++) {
+        let qrtext = "";
+        for (let i = 0; i <= 5; i++) {
             if (a[i] >= 1) qrtext += `${number[i]}×${a[i]}\n`;
         }
-        var utf8qrtext = unescape(encodeURIComponent(qrtext));
+        let utf8qrtext = unescape(encodeURIComponent(qrtext));
         $("#img-qr").html("").qrcode({ text: utf8qrtext }).show();
     });
 
     $('#reset').click(function() {
-        var zero = 0;
+        let zero = 0;
         document.getElementById("count").innerHTML = zero;
         $('#img-qr').hide();
-        for (var i = 0; i <= 6; i++) {
+        for (let i = 0; i <= 6; i++) {
             a[i] = 0;
             document.getElementById(number[i]).innerHTML = a[i];
         }
